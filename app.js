@@ -14,7 +14,6 @@ function saveNote(event) {
 
   if (editingNoteId) {
     // Update existing Note
-
     const noteIndex = notes.findIndex(note => note.id === editingNoteId)
     notes[noteIndex] = {
       ...notes[noteIndex],
@@ -86,12 +85,14 @@ function openNoteDialog(noteId = null) {
   const contentInput = document.getElementById('noteContent');
 
   if (noteId) {
+    // Edit Mode
     const noteToEdit = notes.find(note => note.id === noteId)
     editingNoteId = noteId
     document.getElementById('dialogTitle').textContent = 'Edit Note'
     titleInput.value = noteToEdit.title
     contentInput.value = noteToEdit.content
   } else {
+    // Add Mode
     editingNoteId = null
     document.getElementById('dialogTitle').textContent = 'Add New Note'
     titleInput.value = ''
