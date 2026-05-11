@@ -3,7 +3,7 @@ let editingNoteId = null
 
 function loadNotes() {
   const savedNotes = localStorage.getItem('quickNotes')
-  return saveNotes ? JSON.parse(savedNotes) : []
+  return savedNotes ? JSON.parse(savedNotes) : []
 }
 
 function saveNote(event) {
