@@ -37,9 +37,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-button,
-input,
-textarea {
+button, input, textarea {
   font: inherit;
 }
 
@@ -78,9 +76,10 @@ header {
 }
 
 .theme-toggle-btn:hover {
-  background-color: var(--brand-color);
+  background: var(--brand-color);
   color: white;
 }
+
 
 .notes-grid {
   display: grid;
@@ -89,7 +88,7 @@ header {
 }
 
 .note-card {
-  background-color: var(--surface-color);
+  background: var(--surface-color);
   border-radius: 0.75rem;
   padding: 1.5rem;
   border: 1px solid var(--surface-color);
@@ -134,8 +133,7 @@ header {
   visibility: visible;
 }
 
-.edit-btn,
-.delete-btn {
+.edit-btn, .delete-btn {
   width: 32px;
   height: 32px;
   border: none;
@@ -162,7 +160,7 @@ header {
   color: white;
 }
 
-.dialog {
+dialog {
   margin: auto;
   inset: 0;
   border: none;
@@ -174,8 +172,8 @@ header {
   width: 90vw;
 }
 
-.dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.01);
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
 }
 
@@ -221,8 +219,7 @@ header {
   color: var(--text-color);
 }
 
-.form-input,
-.form-textarea {
+.form-input, .form-textarea {
   width: 100%;
   padding: 0.75rem;
   border: 2px solid var(--surface-color);
@@ -233,8 +230,7 @@ header {
   color: var(--text-color);
 }
 
-.form-input:focus,
-.form-textarea:focus {
+.form-input:focus, .form-textarea:focus {
   outline: none;
   border-color: var(--brand-color);
 }
@@ -250,9 +246,8 @@ header {
   justify-content: flex-end;
 }
 
-.cancel-btn,
-.save-btn {
-  padding: 0.75rem, 1.5rem;
+.cancel-btn, .save-btn {
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;

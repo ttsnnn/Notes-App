@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quick Notes</title>
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -18,9 +19,7 @@
     </div>
   </header>
 
-  <main id="notes-container" class="notes-grid">
-
-  </main>
+  <main id="notesContainer" class="notes-grid"></main>
 
   <dialog id="noteDialog">
     <div class="dialog-content">
@@ -29,7 +28,7 @@
         <button class="close-btn" onclick="closeNoteDialog()">x</button>
       </div>
 
-      <formid="noteForm">
+      <form id="noteForm">
         <div class="form-group">
           <label for="noteTitle" class="form-label">Title</label>
           <input type="text" class="form-input" id="noteTitle" placeholder="Enter note title..." required>
@@ -37,7 +36,7 @@
 
         <div class="form-group">
           <label for="noteContent" class="form-label"></label>
-          <textarea name="" id="noteContent" class="form-textarea" placeholder="Write your note here..." required></textarea>
+          <textarea id="noteContent" class="form-textarea" placeholder="Write your note here..." required></textarea>
         </div>
 
         <div class="dialog-actions">
